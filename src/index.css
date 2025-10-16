@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background: #fff8f0;
+}
+
+/* Uniform Grid Layout */
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* fixed width grid cells */
+  gap: 24px;
+  padding: 40px 20px;
+  justify-items: center; /* center each card */
+  align-items: start;
+}
