@@ -1,16 +1,30 @@
-# React + Vite
+# 🍽️ Recipe Finder App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Recipe Finder web app built using **React.js**, **Material UI**, and **FontAwesome Icons**.  
+It allows users to explore recipes, filter them by cuisine or difficulty, and search instantly — all fetched from a free API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🔍 **Search Recipes:** Filter recipes instantly by name.
+- 🍳 **Cuisine Filter:** Choose recipes by cuisine (Italian, Indian, etc.).
+- 🧩 **Difficulty Filter:** Select recipes by difficulty (Easy, Medium).
+- 🖼️ **Hero Carousel:** Beautiful top section for featured recipes.
+- 💡 **Shimmer Loader:** Skeleton loading animation while fetching data.
+- 🌐 **Context API:** For managing search, cuisine, and difficulty states globally.
+- 📱 **Responsive UI:** Optimized for desktop, tablet, and mobile.
+- ⚡ **Material UI** Professional look using MUI components.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧰 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Category | Technologies Used |
+|-----------|-------------------|
+| **Frontend** | React.js (Vite or CRA) |
+| **UI Library** | Material UI (MUI) |
+| **Icons** | FontAwesome Icons |
+| **State Management** | React Context API |
+| **API Source** | [DummyJSON Recipes API](https://dummyjson.com/recipes) |
+| **Styling** | CSS + MUI Components |
