@@ -8,14 +8,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 const App = () => {
   return (
-    <>
-      <Routes>
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/recipeDetails/:id" element={<RecipeDetails />}></Route>
-        </Route>
-      </Routes>
-    </>
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/recipeDetails/:id" element={<RecipeDetails />}></Route>
+      </Route>
+    </Routes>
   );
 };
 

@@ -3,7 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faKitchenSet } from "@fortawesome/free-solid-svg-icons";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import HomeIcon from "@mui/icons-material/Home";
-const Header = () => {
+import SearchBar from "./SearchBar";
+import SelectFilter from "./SelectFilter";
+const Header = ({ hideSearch }) => {
   return (
     <AppBar
       position="sticky"
@@ -15,44 +17,31 @@ const Header = () => {
       <Toolbar sx={{ justifyContent: "space-between" }}>
         {/* Logo / Title */}
         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-          <FontAwesomeIcon icon={faKitchenSet} />{" "}
+          <FontAwesomeIcon
+            icon={faKitchenSet}
+            style={{
+              fontSize: "25px",
+              marginRight: "8px",
+            }}
+          />{" "}
           <Typography
-            variant="h6"
+            variant="h5"
             fontWeight={600}
-            sx={{ cursor: "pointer" }}
+            sx={{
+              textTransform: "uppercase",
+              fontSize: "25px",
+            }}
             onClick={() => navigate("/")}
           >
             Recipe App
           </Typography>
         </Box>
-
-        {/* Nav Buttons */}
-        <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-          <Button
-            startIcon={<HomeIcon />}
-            color="inherit"
-            sx={{
-              textTransform: "none",
-              fontWeight: 500,
-              "&:hover": { background: "rgba(255,255,255,0.1)" },
-            }}
-            onClick={() => navigate("/")}
-          >
-            Home
-          </Button>
-          <Button
-            startIcon={<FavoriteIcon />}
-            color="inherit"
-            sx={{
-              textTransform: "none",
-              fontWeight: 500,
-              "&:hover": { background: "rgba(255,255,255,0.1)" },
-            }}
-            onClick={() => alert("Coming soon ❤️")}
-          >
-            Favorites
-          </Button>
-        </Box>
+        {!hideSearch && (
+          <>
+            <SearchBar />
+            <SelectFilter />
+          </>
+        )}
       </Toolbar>
     </AppBar>
   );

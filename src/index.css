@@ -12,12 +12,21 @@ body {
   background: #fff8f0;
 }
 
-/* Uniform Grid Layout */
 .main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* fixed width grid cells */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 24px;
   padding: 40px 20px;
-  justify-items: center; /* center each card */
+  justify-items: center;
   align-items: start;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
 }
